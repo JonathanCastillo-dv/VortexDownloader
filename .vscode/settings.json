@@ -1,0 +1,27 @@
+{
+  "search.exclude": {
+    "**/node_modules": false
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.configPath": ".prettierrc",
+  "files.insertFinalNewline": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#de0d0d",
+    "statusBar.foreground": "#ffffff",
+    "statusBarItem.hoverBackground": "#de0d0d",
+    "statusBarItem.remoteBackground": "#de0d0d",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "titleBar.activeBackground": "#de0d0d",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#de0d0d",
+    "titleBar.inactiveForeground": "#ffffff99"
+  },
+  "prettier.prettierPath": "",
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
+}
