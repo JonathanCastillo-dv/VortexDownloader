@@ -1,17 +1,20 @@
 {
   "name": "vortexdownloader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "herramienta ágil y eficiente diseñada para simplificar la transferencia de archivos a través de la web. Con un enfoque en la usabilidad y la velocidad, este proyecto permite a los usuarios compartir archivos con facilidad, generando enlaces directos que pueden ser descargados por otros desde cualquier navegador y dispositivo",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "jest ./test --silent",
+    "build": "tsc",
+    "test": "npm run build && jest",
+    "test-watch": "npm run build && jest --watch",
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/",
-    "coverage": "jest --coverage",
-    "format": "npx prettier --write ."
+    "coverage": "npm run build && jest --coverage",
+    "format": "npx prettier --write .",
+    "start": "nodemon -e ts -w ts-node app.ts"
   },
   "keywords": [
     "Nodejs",
@@ -21,8 +24,19 @@
   "author": "Jonathan Castillo",
   "license": "ISC",
   "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/express": "^4.17.21",
     "@types/node": "^20.9.0",
+    "@types/serve-index": "^1.9.4",
+    "colors": "^1.4.0",
     "eslint": "^8.53.0",
+    "nodemon": "^3.0.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "serve-index": "^1.9.1"
   }
 }
