@@ -1,0 +1,28 @@
+{
+  "name": "vortexdownloader",
+  "version": "1.0.0",
+  "description": "herramienta ágil y eficiente diseñada para simplificar la transferencia de archivos a través de la web. Con un enfoque en la usabilidad y la velocidad, este proyecto permite a los usuarios compartir archivos con facilidad, generando enlaces directos que pueden ser descargados por otros desde cualquier navegador y dispositivo",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest ./test --silent",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/",
+    "coverage": "jest --coverage",
+    "format": "npx prettier --write ."
+  },
+  "keywords": [
+    "Nodejs",
+    "TS",
+    "Express"
+  ],
+  "author": "Jonathan Castillo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "eslint": "^8.53.0",
+    "typescript": "^5.2.2"
+  }
+}
