@@ -18,7 +18,7 @@ class Server {
   private middleWares() {
     this.app.use(compression());
     this.app.use(express.json({ limit: '50mb' }));
-    this.app.use('/shared', express.static(this.PATH_SHARED), serveIndex('public/shared', { 'icons': true }));
+    this.app.use('/shared', express.static(this.PATH_SHARED), serveIndex(this.PATH_SHARED, { 'icons': true }));
   }
 
   private routes() {

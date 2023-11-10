@@ -2,7 +2,7 @@
   "name": "vortexdownloader",
   "version": "1.1.0",
   "description": "herramienta ágil y eficiente diseñada para simplificar la transferencia de archivos a través de la web. Con un enfoque en la usabilidad y la velocidad, este proyecto permite a los usuarios compartir archivos con facilidad, generando enlaces directos que pueden ser descargados por otros desde cualquier navegador y dispositivo",
-  "main": "index.js",
+  "main": "app.js",
   "directories": {
     "doc": "docs"
   },
@@ -14,7 +14,9 @@
     "lint-fix": "eslint --fix src/",
     "coverage": "npm run build && jest --coverage",
     "format": "npx prettier --write .",
-    "start": "nodemon -e ts -w ts-node app.ts"
+    "start": "nodemon -e ts -w ts-node app.ts",
+    "build-docker": "docker buildx build -t vortex-downloader .",
+    "docker-start": "docker run -p 3000:3000 -e PORT_SERVER=3000 vortex-downloader"
   },
   "keywords": [
     "Nodejs",
