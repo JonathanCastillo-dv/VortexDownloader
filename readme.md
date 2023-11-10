@@ -10,7 +10,7 @@ dependerá de la conexión del usuario que esté ejecutando el servidor.
 
 ## Características principales
 
-- Genera URLs para archivos almacenados en la carpeta `public/shared`.
+- Genera URLs para archivos almacenados en la carpeta `dist/public/shared`.
 - Facilita el intercambio rápido de archivos de una PC a otra.
 - Interfaz de usuario que muestra un índice de archivos disponibles.
 - Proporciona un JSON con todos los archivos y sus respectivas URLs.
@@ -27,7 +27,7 @@ dependerá de la conexión del usuario que esté ejecutando el servidor.
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
-   `git clone https://github.com/tuusuario/VortexDownloader.git`
+   `git@github.com:JonathanCastillo-dv/VortexDownloader.git`
 
 2. Navega al directorio del proyecto: `cd VortexDownloader`
 
@@ -35,7 +35,7 @@ dependerá de la conexión del usuario que esté ejecutando el servidor.
 
 ## Uso
 
-1. Asegúrate de que los archivos que deseas compartir se encuentren en la carpeta `public/shared`.
+1. Asegúrate de que los archivos que deseas compartir se encuentren en la carpeta `dist/public/shared`.
 
 2. Inicia el servidor:
 
